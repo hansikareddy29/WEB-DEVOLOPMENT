@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transforms</title>
+    <style>
+        .container{
+            height: 100vh;
+            width: 80vw;
+            border: 2px solid black;
+
+        }
+        .box{
+            height: 140px;
+            width: 140px;
+            border: 2px solid purple;
+            background-color: beige;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform: rotate(45deg);
+            /* this will rotate the box by 45 degrees */
+            /* transform:rotate(0.25 turn);
+            this will roate the box by 90 degrees as 1/4th of 360 is 90 degrees
+            basically 1 turn equals 360 degrees */
+
+            /* transform: rotateX(45deg); */
+            /* it will roate about X axis by 45 degrees basically keep a 
+            side on x axis and rotate it around it 
+            same for rotateY and rotateZ*/
+            transform: scale(3);
+            /* this males the box by 3 times
+            same for sacleX Y Z 3d  */
+            transform: skew(34deg);
+            /* this will do it like a parallelogram
+            there is no skew Z only X and Y */
+            transform: translateX(34px);
+            /* if 34px then translates in x axis by 34px
+            if 34% the translates in x axis by 34% of its width 
+             */
+             /* now i can apply all 4 or 3 transform properties at oncwe
+             like follows
+             /* transform: translateX(34%) skew(34deg) scale(2) translateY(34%); */
+             /* transform-origin: 0% 90%;this will keep the origin at 0 and 95 % of height */
+             
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">BOX</div>
+    </div>
+</body>
+</html>
