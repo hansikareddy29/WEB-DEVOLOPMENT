@@ -1,0 +1,42 @@
+* the axis in which the items are kept that is if flex direction is row then 
+the items will be kept row wise naa
+so the horizontal axis becomes the MAIN axis
+the vertical axis which is perpendicular to the main axis becomes CROSS axis
+
+
+* if the flex-direction is column then main axis will be vertical and cross axis will be 
+horizonatl that is perpendicular to main axis
+
+
+* now the justify content center property doesnt look for horizonatl or vertical screen
+rather it will see how the main axis is aligned 
+
+* if it is that is main axis is horizonatl then it will lay them in horizonatl center and if it is vertical 
+it will lay them in vertical center
+
+* it all depends on MAIN AXIS alignment
+
+
+* and if u give flex start in justify content then it will go according to main start
+
+
+* what is main start??
+if main is vertical 
+|-->this is main start
+|
+|
+|
+|
+|
+^-->this is main end
+if cross is horizontal
+-------------------->|
+|                    |
+|                     this is cross end
+^
+this is cross start
+
+
+
+* the distance between main start and main end is main size
+* the distance between cross start and cross end is cross size

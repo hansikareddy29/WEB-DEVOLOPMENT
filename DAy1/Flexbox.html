@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEXBOX</title>
+    <style>
+        .container {
+            height: 80vh;
+            /* height will be 80 percent of viewers height which ever the device is */
+            border: 2px solid black;
+            display: flex;
+            /* this conatiner becomes flex box which by default lays boxes or items
+            in --> this direction */
+
+            justify-content: center;
+            /* brings them to the center horizonta; */
+            /* than ceter if u keep flex-end it will move to the end the flex */
+            /* if u keep flex-start it will move to the start the flex */
+            /* if space around then space willl be there between screen and first box  */
+            /* if space between then space willl be there between boxes only and not between screen and box */
+
+            align-items: center;
+            /* brings them to the center vertically */
+            /* if flex start here then goes to top and flex end then goes to bottom */
+
+            /* and all these properties are applied on the conatiners and not on indivisual items */
+
+            flex-direction: column;
+            /* this will lay all the boxes in column wise
+        
+        and if u use column-reverse itt will lay all boxes in column wise but reverse order
+
+        */
+            /* 
+        there are also flex direction: row
+        this will lay them in rowwise 
+        also row reversef*/
+        flex-wrap: wrap;
+        /* thsis will wrap the contents inside this conatiner downward when there are more number of items in the conatiner
+         why downward ? because we took flex direction as row 
+         not here but if we take it row then they will wrap downwards*/
+/* there is wrap reverse also 
+it will wrap in reverse way */
+
+         /* if we have multiple lines we will use align-content if we wnat to keep in center 
+         the align-content: center at start the flex-start  end then flex-end */
+        
+        /* there is no justify item there is no use of it in flex box  */
+        
+    /* flex-flow: row wrap;
+    the synatx of flex flow is  flex direction and flex wrap*/
+    /* if u want the flex direction in row and wrapping in  */
+    gap: 30px;
+    /* because of gap property here the items in it are gapped by 30px
+    and there is no need of margin in class items */
+    /* there ar row-gap and column-gap
+    
+    the row-gap=45px then it will give 45px gap between rows
+    the column-gap=10px then it will give 10px gap between columns */
+/* if gap=45px 10px; the short hand for row and column gap */
+    }
+    /* these are properties which are applied on conatiner or flex box 
+    now we will learn properties applied on items */
+
+
+
+
+
+
+
+        .box {
+            /* now item property */
+            
+            height: 90px;
+            width: 90px;
+            border: 2px solid red;
+            background-color: greenyellow;
+            /* margin: 20px; */
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+    </div>
+</body>
+
+</html>
